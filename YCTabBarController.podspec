@@ -24,7 +24,7 @@ s.summary      = "YCTabBarController is a TabBarController with animations for i
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
-s.description  = "YCTabBarController is a TabBarController with animations for iOS."
+s.description  = <<-DESC
 DESC
 
 s.homepage     = "https://github.com/cagri21/YCTabBarController"
