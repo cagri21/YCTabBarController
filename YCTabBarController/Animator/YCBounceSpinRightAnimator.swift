@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import QuartzCore
 public class YCBounceSpinRightAnimator: YCTabBarAnimatable {
     
     private(set) var initialIndex: Int
