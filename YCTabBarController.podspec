@@ -31,7 +31,6 @@ DESC
 s.homepage     = "https://github.com/cagri21/YCTabBarController"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
 #  Licensing your code is important. See http://choosealicense.com for more info.
@@ -65,11 +64,11 @@ s.author             = { "cagriyorukoglu" => "cagriyorukoglu@outlook.com" }
 #
 
 # s.platform     = :ios
-# s.platform     = :ios, "12.0"
+ s.platform     = :ios, "12.0"
 
 #  When using multiple platforms
-# s.ios.deployment_target = "12.0"
-# s.osx.deployment_target = "10.7"
+s.ios.deployment_target = "12.0"
+# s.osx.deployment_target = "10.9"
 # s.watchos.deployment_target = "2.0"
 # s.tvos.deployment_target = "11.0"
 
@@ -117,7 +116,7 @@ s.exclude_files = "Classes/Exclude"
 #  the lib prefix of their name.
 #
 
-# s.framework  = "UIKit"
+ s.framework  = "UIKit"
 
 # s.library   = "iconv"
 # s.libraries = "iconv", "xml2"
