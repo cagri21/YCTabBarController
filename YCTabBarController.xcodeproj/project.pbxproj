@@ -10,6 +10,22 @@
 		DF719AA82415439600E46A1E /* YCTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF719A9E2415439500E46A1E /* YCTabBarController.framework */; };
 		DF719AAD2415439600E46A1E /* YCTabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AAC2415439600E46A1E /* YCTabBarControllerTests.swift */; };
 		DF719AAF2415439600E46A1E /* YCTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF719AA12415439500E46A1E /* YCTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF719ABB241546D600E46A1E /* YCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719ABA241546D600E46A1E /* YCTabBarController.swift */; };
+		DF719ABD241546EE00E46A1E /* YCTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719ABC241546EE00E46A1E /* YCTabBar.swift */; };
+		DF719ABF2415470C00E46A1E /* YCTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719ABE2415470C00E46A1E /* YCTabBarItem.swift */; };
+		DF719AC42415475100E46A1E /* YCTabbableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AC32415475100E46A1E /* YCTabbableViewController.swift */; };
+		DF719AC62415476400E46A1E /* YCTabBarAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AC52415476400E46A1E /* YCTabBarAnimatable.swift */; };
+		DF719AC82415477900E46A1E /* YCTabBarControllerDataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AC72415477900E46A1E /* YCTabBarControllerDataSource+Delegate.swift */; };
+		DF719ACA2415478700E46A1E /* YCTabBarDataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AC92415478700E46A1E /* YCTabBarDataSource+Delegate.swift */; };
+		DF719ACC2415479700E46A1E /* YCTabBarItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719ACB2415479700E46A1E /* YCTabBarItemable.swift */; };
+		DF719ACF241547C900E46A1E /* YCAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719ACE241547C900E46A1E /* YCAnimationStyle.swift */; };
+		DF719AD1241547DE00E46A1E /* YCSlidingOverlayAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AD0241547DE00E46A1E /* YCSlidingOverlayAnimator.swift */; };
+		DF719AD3241547FA00E46A1E /* YCUnderlineAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AD2241547FA00E46A1E /* YCUnderlineAnimator.swift */; };
+		DF719AD52415480B00E46A1E /* YCZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AD42415480B00E46A1E /* YCZoomAnimator.swift */; };
+		DF719AD72415481F00E46A1E /* YCBounceAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AD62415481F00E46A1E /* YCBounceAnimator.swift */; };
+		DF719AD92415483100E46A1E /* YCJumpAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719AD82415483100E46A1E /* YCJumpAnimator.swift */; };
+		DF719ADB2415484200E46A1E /* YCBounceSpinRightAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719ADA2415484200E46A1E /* YCBounceSpinRightAnimator.swift */; };
+		DF719ADD2415485400E46A1E /* YCBounceSpinLeftAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF719ADC2415485400E46A1E /* YCBounceSpinLeftAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,22 @@
 		DF719AA72415439600E46A1E /* YCTabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCTabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF719AAC2415439600E46A1E /* YCTabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCTabBarControllerTests.swift; sourceTree = "<group>"; };
 		DF719AAE2415439600E46A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF719ABA241546D600E46A1E /* YCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCTabBarController.swift; sourceTree = "<group>"; };
+		DF719ABC241546EE00E46A1E /* YCTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCTabBar.swift; sourceTree = "<group>"; };
+		DF719ABE2415470C00E46A1E /* YCTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCTabBarItem.swift; sourceTree = "<group>"; };
+		DF719AC32415475100E46A1E /* YCTabbableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCTabbableViewController.swift; sourceTree = "<group>"; };
+		DF719AC52415476400E46A1E /* YCTabBarAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCTabBarAnimatable.swift; sourceTree = "<group>"; };
+		DF719AC72415477900E46A1E /* YCTabBarControllerDataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YCTabBarControllerDataSource+Delegate.swift"; sourceTree = "<group>"; };
+		DF719AC92415478700E46A1E /* YCTabBarDataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YCTabBarDataSource+Delegate.swift"; sourceTree = "<group>"; };
+		DF719ACB2415479700E46A1E /* YCTabBarItemable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCTabBarItemable.swift; sourceTree = "<group>"; };
+		DF719ACE241547C900E46A1E /* YCAnimationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCAnimationStyle.swift; sourceTree = "<group>"; };
+		DF719AD0241547DE00E46A1E /* YCSlidingOverlayAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCSlidingOverlayAnimator.swift; sourceTree = "<group>"; };
+		DF719AD2241547FA00E46A1E /* YCUnderlineAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCUnderlineAnimator.swift; sourceTree = "<group>"; };
+		DF719AD42415480B00E46A1E /* YCZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCZoomAnimator.swift; sourceTree = "<group>"; };
+		DF719AD62415481F00E46A1E /* YCBounceAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCBounceAnimator.swift; sourceTree = "<group>"; };
+		DF719AD82415483100E46A1E /* YCJumpAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCJumpAnimator.swift; sourceTree = "<group>"; };
+		DF719ADA2415484200E46A1E /* YCBounceSpinRightAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCBounceSpinRightAnimator.swift; sourceTree = "<group>"; };
+		DF719ADC2415485400E46A1E /* YCBounceSpinLeftAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCBounceSpinLeftAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +103,9 @@
 		DF719AA02415439500E46A1E /* YCTabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				DF719AB9241546BE00E46A1E /* YCTabBar */,
+				DF719AC22415473100E46A1E /* Protocol */,
+				DF719ACD241547AB00E46A1E /* Animator */,
 				DF719AA12415439500E46A1E /* YCTabBarController.h */,
 				DF719AA22415439500E46A1E /* Info.plist */,
 			);
@@ -84,6 +119,43 @@
 				DF719AAE2415439600E46A1E /* Info.plist */,
 			);
 			path = YCTabBarControllerTests;
+			sourceTree = "<group>";
+		};
+		DF719AB9241546BE00E46A1E /* YCTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DF719ABA241546D600E46A1E /* YCTabBarController.swift */,
+				DF719ABC241546EE00E46A1E /* YCTabBar.swift */,
+				DF719ABE2415470C00E46A1E /* YCTabBarItem.swift */,
+			);
+			path = YCTabBar;
+			sourceTree = "<group>";
+		};
+		DF719AC22415473100E46A1E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DF719AC32415475100E46A1E /* YCTabbableViewController.swift */,
+				DF719AC52415476400E46A1E /* YCTabBarAnimatable.swift */,
+				DF719AC72415477900E46A1E /* YCTabBarControllerDataSource+Delegate.swift */,
+				DF719AC92415478700E46A1E /* YCTabBarDataSource+Delegate.swift */,
+				DF719ACB2415479700E46A1E /* YCTabBarItemable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		DF719ACD241547AB00E46A1E /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				DF719ACE241547C900E46A1E /* YCAnimationStyle.swift */,
+				DF719AD0241547DE00E46A1E /* YCSlidingOverlayAnimator.swift */,
+				DF719AD2241547FA00E46A1E /* YCUnderlineAnimator.swift */,
+				DF719AD42415480B00E46A1E /* YCZoomAnimator.swift */,
+				DF719AD62415481F00E46A1E /* YCBounceAnimator.swift */,
+				DF719AD82415483100E46A1E /* YCJumpAnimator.swift */,
+				DF719ADA2415484200E46A1E /* YCBounceSpinRightAnimator.swift */,
+				DF719ADC2415485400E46A1E /* YCBounceSpinLeftAnimator.swift */,
+			);
+			path = Animator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +220,7 @@
 				TargetAttributes = {
 					DF719A9D2415439500E46A1E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					DF719AA62415439600E46A1E = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF719ABB241546D600E46A1E /* YCTabBarController.swift in Sources */,
+				DF719ADD2415485400E46A1E /* YCBounceSpinLeftAnimator.swift in Sources */,
+				DF719AD72415481F00E46A1E /* YCBounceAnimator.swift in Sources */,
+				DF719AD92415483100E46A1E /* YCJumpAnimator.swift in Sources */,
+				DF719ADB2415484200E46A1E /* YCBounceSpinRightAnimator.swift in Sources */,
+				DF719AC82415477900E46A1E /* YCTabBarControllerDataSource+Delegate.swift in Sources */,
+				DF719ACA2415478700E46A1E /* YCTabBarDataSource+Delegate.swift in Sources */,
+				DF719AD3241547FA00E46A1E /* YCUnderlineAnimator.swift in Sources */,
+				DF719AC42415475100E46A1E /* YCTabbableViewController.swift in Sources */,
+				DF719AD1241547DE00E46A1E /* YCSlidingOverlayAnimator.swift in Sources */,
+				DF719ACC2415479700E46A1E /* YCTabBarItemable.swift in Sources */,
+				DF719AD52415480B00E46A1E /* YCZoomAnimator.swift in Sources */,
+				DF719ABD241546EE00E46A1E /* YCTabBar.swift in Sources */,
+				DF719ABF2415470C00E46A1E /* YCTabBarItem.swift in Sources */,
+				DF719AC62415476400E46A1E /* YCTabBarAnimatable.swift in Sources */,
+				DF719ACF241547C900E46A1E /* YCAnimationStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +430,7 @@
 		DF719AB32415439600E46A1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,7 +448,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.YCTabBarController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -366,6 +457,7 @@
 		DF719AB42415439600E46A1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -383,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.YCTabBarController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -391,6 +483,7 @@
 		DF719AB62415439600E46A1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68NUJYU27T;
 				INFOPLIST_FILE = YCTabBarControllerTests/Info.plist;
@@ -409,6 +502,7 @@
 		DF719AB72415439600E46A1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68NUJYU27T;
 				INFOPLIST_FILE = YCTabBarControllerTests/Info.plist;
