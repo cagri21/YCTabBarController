@@ -67,14 +67,14 @@ public class YCSlidingOverlayAnimator: YCTabBarAnimatable {
         
         tabBar.addSubview(rightOverlayView)
         tabBar.addSubview(leftOverlayView)
-        tabBar.sendSubview(toBack: rightOverlayView)
-        tabBar.sendSubview(toBack: leftOverlayView)
+        tabBar.sendSubviewToBack(rightOverlayView)
+        tabBar.sendSubviewToBack(leftOverlayView)
         
         let colorContainers = self.createOverlayContainers(forContainers: containers, withColors: tabColors)
         
         for container in colorContainers {
             tabBar.addSubview(container)
-            tabBar.sendSubview(toBack: container)
+            tabBar.sendSubviewToBack(container)
         }
         
         zoomAnimator.prepareForAnimation(onMDVTabBar: tabBar, withContainers: containers, andInitialIndex: initialIndex)

@@ -105,8 +105,8 @@ class YCTabBar: UIView {
             
             self.addSubview(tabBarButton)
             self.addSubview(animatedTabBarItem)
-            self.bringSubview(toFront: animatedTabBarItem)
-            self.bringSubview(toFront: tabBarButton)
+            self.bringSubviewToFront(animatedTabBarItem)
+            self.bringSubviewToFront(tabBarButton)
         }
     }
     
