@@ -16,5 +16,6 @@ protocol YCTabBarDataSource: class {
     func ycTabBarItems() -> [UITabBarItem]
     func setAnimationStyle() -> YCAnimationStyle?
     func animationColors() -> [UIColor]?
+    func backgroundColorsUnderline()->YCUnderlineAnimator
 }
 

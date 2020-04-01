@@ -48,6 +48,54 @@ open class YCTabBarController: UITabBarController {
         }
     }
     
+    public var underlineColor:UIColor = .white{
+        didSet{
+            configureViews()
+        }
+    }
+    
+    public var underlineHeight = 40{
+        didSet{
+            configureViews()
+        }
+    }
+    
+    public var underlineWidth = 100{
+        didSet{
+            configureViews()
+        }
+    }
+    
+    public var underlineDamping = 100{
+        didSet{
+            configureViews()
+        }
+    }
+    
+    public var underlineOffsetY = 15{
+        didSet{
+            configureViews()
+        }
+    }
+    
+    public var underlineDuration = 1.0{
+        didSet{
+            configureViews()
+        }
+    }
+    
+    public var underlineDelay = 0.1{
+        didSet{
+            configureViews()
+        }
+    }
+    
+    public var underlineVelocity = 2{
+        didSet{
+            configureViews()
+        }
+    }
+    
     public var ycTabBarBackgroundColor = UIColor.black{
         didSet{
             configureViews()
@@ -115,8 +163,9 @@ open class YCTabBarController: UITabBarController {
 }
 
 extension YCTabBarController: YCTabBarDelegate, YCTabBarDataSource {
-    
-    
+    func backgroundColorsUnderline() -> YCUnderlineAnimator {
+        return YCUnderlineAnimator(withUnderlineColor: underlineColor, underlineHeight: CGFloat(underlineHeight), underlineWidth:  CGFloat(underlineWidth), underlineOffsetY: CGFloat(underlineOffsetY), duration: underlineDuration, delay: underlineDelay, damping: CGFloat(underlineDamping), velocity: CGFloat(underlineVelocity))
+    }
     func didSelect(tabAtIndex index: Int) {
         self.selectedIndex = index
         

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "YCTabBarController"
-s.version      = "0.1.0"
+s.version      = "0.2.0"
 s.summary      = "YCTabBarController is a TabBarController with animations for iOS."
 
 # This description is used to generate tags and improve search results.
@@ -64,6 +64,7 @@ s.author             = { "cagriyorukoglu" => "cagriyorukoglu@outlook.com" }
 #
 
 # s.platform     = :ios
+ s.swift_version = '4.2'
  s.platform     = :ios, "12.0"
 
 #  When using multiple platforms

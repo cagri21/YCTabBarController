@@ -14,6 +14,8 @@ public class YCAnimationStyle {
     
     public var animationStyle: AnimationStyle?
     
+    public var underlineAnimator:YCUnderlineAnimator?
+    
     public init(animationStyle:AnimationStyle){
         self.animationStyle = animationStyle
     }
@@ -49,7 +51,7 @@ public class YCAnimationStyle {
         return YCZoomAnimator()
     }
     public func configureViewUnderline()->YCTabBarAnimatable{
-        return YCUnderlineAnimator(withUnderlineColor: .blue, underlineHeight:  CGFloat(integerLiteral: 2), underlineWidth:  CGFloat(integerLiteral: 2), underlineOffsetY:  CGFloat(integerLiteral: 2), duration: 2.0, delay: 0.3, damping: CGFloat(integerLiteral: 2), velocity:  CGFloat(integerLiteral: 2))
+        return underlineAnimator ?? YCUnderlineAnimator(withUnderlineColor: .black, underlineHeight: 40, underlineWidth:  100, underlineOffsetY: 15, duration: 1.0, delay: 0.1, damping: 100, velocity:  2)
     }
     public func configureViewSlide()->YCTabBarAnimatable{
         return YCSlidingOverlayAnimator(withTabBarColors: backgroundColor!)

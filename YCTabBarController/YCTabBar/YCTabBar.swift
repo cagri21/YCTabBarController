@@ -51,13 +51,20 @@ class YCTabBar: UIView {
             return
         }
         animationStyle = dataSource.setAnimationStyle()!
-        animationStyle.backgroundColor = dataSource.animationColors()
-        animator = animationStyle.setAnimation()
-        tabBarItems = dataSource.ycTabBarItems()
-        
+        if (.underline == animationStyle.animationStyle){
+            animationStyle.underlineAnimator = dataSource.backgroundColorsUnderline()
+            animator = animationStyle.setAnimation()
+            tabBarItems = dataSource.ycTabBarItems()
+        }else if(.slide == animationStyle.animationStyle){
+            animationStyle.backgroundColor = dataSource.animationColors()
+            animator = animationStyle.setAnimation()
+            tabBarItems = dataSource.ycTabBarItems()
+        }else{
+            animator = animationStyle.setAnimation()
+            tabBarItems = dataSource.ycTabBarItems()
+        }
         let containerRects = createContainerRects()
         createTabBarItems(usingContainerRects: containerRects)
-        
         animator.prepareForAnimation(onMDVTabBar: self,
                                      withContainers: animatedTabBarItems,
                                      andInitialIndex: initialIndex)
@@ -85,9 +92,7 @@ class YCTabBar: UIView {
     
     private func createTabBarItems(usingContainerRects rects: [CGRect]) {
         for index in 0..<tabBarItems.count {
-            
             let containerRect = rects[index]
-            
             let animatedTabBarItem = YCTabBarItem(frame: containerRect)
             animatedTabBarItem.configure(withtabBarItem: tabBarItems[index])
             animatedTabBarItems.append(animatedTabBarItem)
