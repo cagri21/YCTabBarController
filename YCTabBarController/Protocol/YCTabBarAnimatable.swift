@@ -8,12 +8,12 @@
 import UIKit
 
 public protocol YCTabBarAnimatable {
-    func prepareForAnimation(onMDVTabBar tabBar: UIView,
+    func prepareForAnimation(onYCTabBar tabBar: UIView,
                              withContainers containers: [YCTabBarContainer],
                              andInitialIndex initialIndex:Int)
     func performAnimation(fromIndex:Int,
                           toIndex:Int,
-                          onMDVTabBar tabBar: UIView,
+                          onYCTabBar tabBar: UIView,
                           withContainers containers: [YCTabBarContainer],
                           completion: @escaping () -> Void)
 }

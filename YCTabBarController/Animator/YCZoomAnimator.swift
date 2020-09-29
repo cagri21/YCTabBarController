@@ -24,7 +24,7 @@ public class YCZoomAnimator: YCTabBarAnimatable {
         self.delay = delay
     }
     
-    public func prepareForAnimation(onMDVTabBar tabBar: UIView, withContainers containers: [YCTabBarContainer], andInitialIndex initialIndex: Int) {
+    public func prepareForAnimation(onYCTabBar tabBar: UIView, withContainers containers: [YCTabBarContainer], andInitialIndex initialIndex: Int) {
         var itemsToDismiss = containers
         itemsToDismiss.remove(at: initialIndex)
         self.zoom(toItem: containers[initialIndex], whileDismissing: itemsToDismiss)
@@ -32,7 +32,7 @@ public class YCZoomAnimator: YCTabBarAnimatable {
     
     public func performAnimation(fromIndex: Int,
                                  toIndex: Int,
-                                 onMDVTabBar tabBar: UIView,
+                                 onYCTabBar tabBar: UIView,
                                  withContainers containers: [YCTabBarContainer],
                                  completion: @escaping () -> Void) {
         

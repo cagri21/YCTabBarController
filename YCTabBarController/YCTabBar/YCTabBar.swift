@@ -11,13 +11,13 @@ import UIKit
 class YCTabBar: UIView {
     
     //MARK:- Public Properties
-    weak var mdvTabBarDelegate: YCTabBarDelegate? {
+    weak var ycTabBarDelegate: YCTabBarDelegate? {
         didSet {
             self.changeIconState(forIndex: self.initialIndex, isInitial: true)
         }
     }
     
-    weak var mdvTabBarDataSource: YCTabBarDataSource? {
+    weak var ycTabBarDataSource: YCTabBarDataSource? {
         didSet {
             self.configure()
         }
@@ -47,7 +47,7 @@ class YCTabBar: UIView {
     
     //MARK:- Private Methods
     private func configure() {
-        guard let dataSource = mdvTabBarDataSource else {
+        guard let dataSource = ycTabBarDataSource else {
             return
         }
         animationStyle = dataSource.setAnimationStyle()!
@@ -65,7 +65,7 @@ class YCTabBar: UIView {
         }
         let containerRects = createContainerRects()
         createTabBarItems(usingContainerRects: containerRects)
-        animator.prepareForAnimation(onMDVTabBar: self,
+        animator.prepareForAnimation(onYCTabBar: self,
                                      withContainers: animatedTabBarItems,
                                      andInitialIndex: initialIndex)
     }
@@ -114,7 +114,7 @@ class YCTabBar: UIView {
         
         animator.performAnimation(fromIndex: selectedIndex,
                                   toIndex: sender.tag,
-                                  onMDVTabBar: self,
+                                  onYCTabBar: self,
                                   withContainers: animatedTabBarItems) {
                                     guard self.selectedIndex != sender.tag else { return }
                                     self.changeIconState(forIndex: sender.tag, isInitial: false)
@@ -127,6 +127,6 @@ class YCTabBar: UIView {
             self.animatedTabBarItems[self.selectedIndex].setState(isSelected: false)
         }
         self.selectedIndex = index
-        self.mdvTabBarDelegate?.didSelect(tabAtIndex: index)
+        self.ycTabBarDelegate?.didSelect(tabAtIndex: index)
     }
 }

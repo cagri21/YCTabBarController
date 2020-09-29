@@ -37,7 +37,7 @@ public class YCSlidingOverlayAnimator: YCTabBarAnimatable {
         print(tabColors)
     }
     
-    public func prepareForAnimation(onMDVTabBar tabBar: UIView,
+    public func prepareForAnimation(onYCTabBar tabBar: UIView,
                                     withContainers containers: [YCTabBarContainer],
                                     andInitialIndex initialIndex: Int) {
         
@@ -77,19 +77,19 @@ public class YCSlidingOverlayAnimator: YCTabBarAnimatable {
             tabBar.sendSubviewToBack(container)
         }
         
-        zoomAnimator.prepareForAnimation(onMDVTabBar: tabBar, withContainers: containers, andInitialIndex: initialIndex)
+        zoomAnimator.prepareForAnimation(onYCTabBar: tabBar, withContainers: containers, andInitialIndex: initialIndex)
     }
     
     public func performAnimation(fromIndex: Int,
                                  toIndex: Int,
-                                 onMDVTabBar tabBar: UIView,
+                                 onYCTabBar tabBar: UIView,
                                  withContainers containers: [YCTabBarContainer],
                                  completion: @escaping () -> Void) {
         
         rightOverlayXPosition = CGFloat(containerWidth*CGFloat(toIndex)) + containerWidth
         leftOverlayXPosition = CGFloat(-tabBar.frame.width) + rightOverlayXPosition - containerWidth
         
-        zoomAnimator.performAnimation(fromIndex: fromIndex, toIndex: toIndex, onMDVTabBar: tabBar, withContainers: containers, completion: {
+        zoomAnimator.performAnimation(fromIndex: fromIndex, toIndex: toIndex, onYCTabBar: tabBar, withContainers: containers, completion: {
             completion()
         })
         

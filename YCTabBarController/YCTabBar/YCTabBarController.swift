@@ -108,7 +108,7 @@ open class YCTabBarController: UITabBarController {
         }
     }
     
-    public var mdvTabBarControllerDelegate : YCTabBarControllerDelegate?
+    public var ycTabBarControllerDelegate : YCTabBarControllerDelegate?
     
     private var ycTabBar: YCTabBar!
     
@@ -133,8 +133,8 @@ open class YCTabBarController: UITabBarController {
                             backgroundColor:ycTabBarBackgroundColor )
         view.addSubview(ycTabBar)
         setupUITabBarConstraints(withHeightOf: CGFloat(height))
-        ycTabBar.mdvTabBarDataSource = self
-        ycTabBar.mdvTabBarDelegate = self
+        ycTabBar.ycTabBarDataSource = self
+        ycTabBar.ycTabBarDelegate = self
         
     }
     

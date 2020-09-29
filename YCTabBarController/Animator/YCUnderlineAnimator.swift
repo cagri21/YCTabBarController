@@ -40,7 +40,7 @@ public class YCUnderlineAnimator: YCTabBarAnimatable {
         self.velocity = velocity
     }
     
-    public func prepareForAnimation(onMDVTabBar tabBar: UIView, withContainers containers: [YCTabBarContainer], andInitialIndex initialIndex: Int) {
+    public func prepareForAnimation(onYCTabBar tabBar: UIView, withContainers containers: [YCTabBarContainer], andInitialIndex initialIndex: Int) {
         
         let xPosition = CGFloat(containers[initialIndex].frame.midX) - (self.underlineWidth/2)
         let yPosition = CGFloat(containers[initialIndex].frame.midY) + self.underlineOffsetY
@@ -58,7 +58,7 @@ public class YCUnderlineAnimator: YCTabBarAnimatable {
     
     public func performAnimation(fromIndex: Int,
                                  toIndex: Int,
-                                 onMDVTabBar tabBar: UIView,
+                                 onYCTabBar tabBar: UIView,
                                  withContainers containers: [YCTabBarContainer],
                                  completion: @escaping () -> Void) {
         

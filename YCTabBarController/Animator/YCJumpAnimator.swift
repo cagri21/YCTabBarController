@@ -14,7 +14,7 @@ public class YCJumpAnimator: YCTabBarAnimatable {
     public init(initIndex:Int){
         self.initialIndex = initIndex
     }
-    public func prepareForAnimation(onMDVTabBar tabBar: UIView,
+    public func prepareForAnimation(onYCTabBar tabBar: UIView,
                                     withContainers containers: [YCTabBarContainer],
                                     andInitialIndex initialIndex: Int) {
         
@@ -28,7 +28,7 @@ public class YCJumpAnimator: YCTabBarAnimatable {
     
     public func performAnimation(fromIndex: Int,
                                  toIndex: Int,
-                                 onMDVTabBar tabBar: UIView,
+                                 onYCTabBar tabBar: UIView,
                                  withContainers containers: [YCTabBarContainer],
                                  completion: @escaping () -> Void) {
         var itemsToDismiss = containers
